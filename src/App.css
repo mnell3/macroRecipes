@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.HomePie {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15vh;
+  background: #b684d8;
+  color: white;
+  font-size: 35px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  min-height: 02vh;
+  align-items: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  color: black;
+}
+
+.back-links {
+  display: flex;
+  justify-content: space-around;
+  min-height: 02vh;
+  align-items: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  color: black;
+  flex-direction: column;
+}
+
+.heading {
+  margin-top: 5vh;
+}
+
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #b684d8;
+  font-size: 30px;
+}
+
+td {
+  background-color: #e4c8f7;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}
