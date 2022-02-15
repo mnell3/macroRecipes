@@ -1,5 +1,7 @@
 import React from "react";
 import "../App.css";
+import img1 from "../images/chicken_veggies.jpg";
+import img2 from "../images/shrimp_scampi.jpg";
 import { Link } from "react-router-dom"; // makes sure page isn't reloaded which would happen with href
 
 const RecipeList = () => {
@@ -10,14 +12,28 @@ const RecipeList = () => {
           <tr>
             <th>Recipe</th>
             <th>Description</th>
-            <th>View Recipe</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Chicken and Veggies</td>
-            <td>Super yummy recipe...</td>
-            <td> {<button>Click here to view</button>} </td>
+            <td>
+              {" "}
+              <img className="table-images"src={img1} alt="Image of Chicken and Veggie Soup"/>
+            </td>
+            <td>
+              <div className="descriptions"> Chicken soup with potatoes, carrots, and... </div>
+              <Link to="/recipe_details">Click here to view</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {" "}
+              <img className="table-images" src={img2} alt="Shrimp Scampi" />
+            </td>
+            <td>
+              <div className="descriptions"> Shrimp scampi with... </div>
+              <Link to="/recipe_details">Click here to view</Link>
+            </td>
           </tr>
         </tbody>
       </table>

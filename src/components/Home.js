@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import { PieChart, Pie, Tooltip } from "recharts";
+import { PieChart, Pie, Tooltip } from "recharts"; // https://recharts.org/en-US/examples/TwoSimplePieChart
 
 // put these in a separate component??
 

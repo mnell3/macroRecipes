@@ -26,7 +26,7 @@
   align-items: center;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: large;
+  font-size: 25px;
   color: black;
 }
 
@@ -40,6 +40,8 @@
   font-size: large;
   color: black;
   flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 
 .heading {
@@ -59,23 +61,28 @@
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  table-layout: fixed;
+  text-align: center;
+  align-items: center;
+
 }
 
 th,
 td {
   border: 1px solid #ffffff;
-  text-align: left;
   padding: 8px;
 }
 
 th {
-  background-color: #b684d8;
+  background-color: #ffffff;
   font-size: 30px;
 }
 
 td {
-  background-color: #e4c8f7;
+  background-color: #efdffa;
   font-size: 20px;
 }
 
@@ -92,3 +99,31 @@ form td:last-child {
 form * {
   font-size: 28px;
 }
+
+.table-images {
+  max-width:200px;
+  max-height:200px;
+
+
+}
+
+.descriptions{
+  margin-bottom: 30px;
+}
+
+
+.save-recipe-button{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #b684d8;
+  border-radius: 8px;
+  border-color:#b684d8;
+  font-size: 15px;
+  
+}
+
+.recipe-titles{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
