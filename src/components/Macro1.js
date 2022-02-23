@@ -18,11 +18,20 @@ const RecipeList = () => {
           <tr>
             <td>
               {" "}
-              <img className="table-images"src={img1} alt="Image of Chicken and Veggie Soup"/>
+              <img
+                className="table-images"
+                src={img1}
+                alt="Chicken and Veggie Soup"
+              />
             </td>
             <td>
-              <div className="descriptions"> Chicken soup with potatoes, carrots, and... </div>
-              <Link to="/recipe_details">Click here to view</Link>
+              <div className="descriptions">
+                {" "}
+                Chicken soup with potatoes, carrots, and...{" "}
+              </div>
+              <a href="https://www.archanaskitchen.com/healthy-creamy-chicken-soup-with-vegetables-recipe">
+                Click here to view{" "}
+              </a>
             </td>
           </tr>
           <tr>
@@ -32,7 +41,9 @@ const RecipeList = () => {
             </td>
             <td>
               <div className="descriptions"> Shrimp scampi with... </div>
-              <Link to="/recipe_details">Click here to view</Link>
+              <a href="https://www.thespruceeats.com/classic-shrimp-scampi-1300772">
+                Click here to view{" "}
+              </a>
             </td>
           </tr>
         </tbody>
@@ -47,8 +58,8 @@ function Macro1() {
       <h3 className="nav-links"> Macro 1: Body Building</h3>
       <div className="back-links">
         {RecipeList()}
-        <Link to="/savedrecipes">View Saved Recipes</Link>
-        <Link to="/">Go Back to Home Page</Link>
+        {/* <Link to="/savedrecipes">View Saved Recipes</Link> */}
+        <Link to="/">Home Page</Link>
       </div>
     </div>
   );

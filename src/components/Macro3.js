@@ -29,10 +29,12 @@ const RecipeList = () => {
                 {" "}
                 Chicken soup with potatoes, carrots, and...{" "}
               </div>
-              <Link to="/recipe_details">Click here to view</Link>
-              <div>
+              <a href="https://www.archanaskitchen.com/healthy-creamy-chicken-soup-with-vegetables-recipe">
+                Click here to view
+              </a>
+              {/* <div>
                 <button className="save-recipe-button">Save Recipe</button>
-              </div>
+              </div> */}
             </td>
           </tr>
           <tr>
@@ -42,10 +44,13 @@ const RecipeList = () => {
             </td>
             <td>
               <div className="descriptions"> Shrimp scampi with... </div>
-              <Link to="/recipe_details">Click here to view</Link>
-              <div>
+              <a href="https://www.thespruceeats.com/classic-shrimp-scampi-1300772">
+                {" "}
+                Click here to view{" "}
+              </a>
+              {/* <div>
                 <button className="save-recipe-button">Saved Recipe</button>
-              </div>
+              </div> */}
             </td>
           </tr>
         </tbody>
@@ -60,8 +65,8 @@ function Macro3() {
       <h3 className="nav-links"> Macro 3: Maintenance</h3>
       <div className="back-links">
         {RecipeList()}
-        <Link to="/savedrecipes">View Saved Recipes</Link>
-        <Link to="/">Select a different macro ratios</Link>
+        {/* <Link to="/savedrecipes">View Saved Recipes</Link> */}
+        <Link to="/">Home Page</Link>
       </div>
     </div>
   );
