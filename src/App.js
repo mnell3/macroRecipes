@@ -1,18 +1,47 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/Home";
-import Macro1 from "./components/Macro1";
-import Macro2 from "./components/Macro2";
-import Macro3 from "./components/Macro3";
+import Home from "./pages/Home";
+import Macro1 from "./pages/Macro1";
+import Macro2 from "./pages/Macro2";
+import Macro3 from "./pages/Macro3";
 import SavedRecipes from "./components/SavedRecipes";
 import Recipe from "./pages/recipe";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //route renders out a component based on the URL
+
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Router>
+        <Navbar bg="light" expand="lg">
+          <Container>
+            <LinkContainer to="/">
+              <Navbar.Brand>Nutrition</Navbar.Brand>
+            </LinkContainer>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <LinkContainer to="/">
+                  <Nav.Link>Home</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/macro1">
+                  <Nav.Link>Bodybuilding</Nav.Link>
+                </LinkContainer>
+
+                <LinkContainer to="/macro2">
+                  <Nav.Link>Maintenance</Nav.Link>
+                </LinkContainer>
+
+                <LinkContainer to="/macro3">
+                  <Nav.Link>Fat Loss</Nav.Link>
+                </LinkContainer>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/macro1" element={<Macro1 />} />
