@@ -3,8 +3,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import { PieChart, Pie, Tooltip } from "recharts"; // https://recharts.org/en-US/examples/TwoSimplePieChart
 
-// put these in a separate component??
-
+// Pie charts for macros: bodybuilding, maintenance, and fat loss respectively 
 const data_macro1 = [
   { name: "Carbs", value: 50 },
   { name: "Protein", value: 30 },
@@ -22,10 +21,10 @@ const data_macro3 = [
   { name: "Fat", value: 35 },
 ];
 
+// Create three pie charts with the above data 
 const HomePie = () => {
   return (
     <div style={{ textAlign: "center" }}>
-      {/* <h1>{macro}</h1> */}
       <div className="HomePie">
         <PieChart width={400} height={400}>
           <Pie
@@ -71,13 +70,15 @@ const HomePie = () => {
   );
 };
 
+// Display the pie charts and links to each macro ratio
 function Home() {
   return (
-    <div>
+    <div class="container">
       <h3 className="nav-links">Welcome to Macro Recipes!</h3>
       <h3 className="heading">
         {" "}
-        Please select one of the following macronutrient ratios to view recipes
+        Please select one of the following macronutrient ratio links
+         to view recipes for that ratio
       </h3>
       <div className="pie-charts">{HomePie()}</div>
       <div className="home-links">

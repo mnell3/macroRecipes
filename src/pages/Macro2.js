@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"; //
 function Macro2() {
   const [recipes, setRecipes] = useState([]);
 
+  // get each recipe that has the macro "maintenance"
   useEffect(() => {
     fetch("http://localhost:3000/recipes?macro_like=maintenance")
       .then((resp) => resp.json())
@@ -14,12 +15,12 @@ function Macro2() {
       });
   }, []);
 
+  // Use the RecipeList component to display each recipe
   return (
-    <div>
+    <div class="container">
       <h3 className="nav-links"> Macro 2: Maintenance</h3>
       <div className="back-links">
         <RecipeList recipes={recipes} />
-        {/* <Link to="/savedrecipes">View Saved Recipes</Link> */}
         <Link to="/">Home Page</Link>
       </div>
     </div>

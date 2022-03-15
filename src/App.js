@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Macro1 from "./pages/Macro1";
 import Macro2 from "./pages/Macro2";
 import Macro3 from "./pages/Macro3";
-import SavedRecipes from "./components/SavedRecipes";
 import Recipe from "./pages/recipe";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //route renders out a component based on the URL
@@ -48,7 +47,6 @@ function App() {
           <Route path="/macro2" element={<Macro2 />} />
           <Route path="/macro3" element={<Macro3 />} />
           <Route path="/recipes/:id" element={<Recipe />} />
-          <Route path="/savedrecipes" element={<SavedRecipes />} />
         </Routes>
       </Router>
     </div>

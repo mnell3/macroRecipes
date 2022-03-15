@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Create list with the ingredients for the specified recipe
 function RecipeList({ recipes }) {
   return (
     <div className="app-container">

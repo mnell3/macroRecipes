@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Create list with the recipe titles and the recipe images
 function RecipeList({ recipes }) {
   return (
     <div className="app-container">

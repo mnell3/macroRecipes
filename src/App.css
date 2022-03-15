@@ -19,6 +19,29 @@
   font-size: 35px;
 }
 
+.ingredient-button {
+  background: #b684d8;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.ingredient-heading {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.ingredient-subheading {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.recipe-details {
+  justify-content: center;
+  
+}
+
 .home-links {
   display: flex;
   justify-content: space-around;
@@ -46,6 +69,7 @@
 
 .heading {
   margin-top: 5vh;
+  text-align: center;
 }
 
 .recharts-wrapper {
@@ -84,6 +108,7 @@ td {
   background-color: #efdffa;
   font-size: 20px;
   margin-bottom: 100px;
+  
 }
 
 form {
@@ -101,7 +126,7 @@ form * {
 }
 
 .table-images {
-  width: 80%;
+  width: 90%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 25px;
@@ -126,3 +151,18 @@ form * {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
+
+ .recipe-list {
+   float:left; 
+   width:50%;
+   height:280px;
+ }
+ 
+.recipe-steps{
+  float:right;
+  width:50%;
+  height:280px;
+}
+  
+           
